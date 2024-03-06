@@ -15,12 +15,13 @@ body{
     grid-gap: 2em;
     overflow-x: scroll;
     scrollbar-width: none;
+    cursor: grab;
+    scroll-behavior: smooth;
 }
 .item{
     display: grid;
     grid-template-rows: 1fr 3em;
     background-color: #292929;
-    cursor: grab;
     user-select: none;
 }
 .item img{
