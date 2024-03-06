@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: arial;
+    padding: 2.5em;
+}
+.sliderContainer{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 20em;
+    grid-gap: 2em;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.item{
+    display: grid;
+    grid-template-rows: 1fr 3em;
+    background-color: #292929;
+    cursor: grab;
+    user-select: none;
+}
+.item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.item .itemContent{
+    margin: 0.3em;
+}
+.links{
+    text-decoration: none;
+    color: white;
+}
+.item:hover{
+    opacity: 0.8;
+}
